@@ -1,8 +1,8 @@
+/* General Styles */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Smooth scrolling for all link jumps */
 }
 
-/* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -20,10 +20,15 @@ nav {
   padding: 10px 20px;
 }
 
-nav .logo {
+.logo {
   color: white;
   font-size: 1.5em;
   font-weight: bold;
+  text-decoration: none; /* No underline */
+}
+
+.logo:hover {
+  color: #4CAF50; /* Nice hover effect on logo */
 }
 
 nav ul {
@@ -41,6 +46,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 nav ul li a:hover {
@@ -70,7 +76,7 @@ nav ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease; /* <-- Add this line */
+  transition: all 0.3s ease; /* Smooth button hover */
 }
 
 .btn:hover {
@@ -99,4 +105,5 @@ footer {
   color: white;
   padding: 20px 0;
   font-size: 0.9em;
+  margin-top: 40px;
 }
