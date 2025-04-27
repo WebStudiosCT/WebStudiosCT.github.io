@@ -70,6 +70,7 @@ nav ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease; /* <-- Add this line */
 }
 
 .btn:hover {
