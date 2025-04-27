@@ -109,3 +109,9 @@ footer {
   font-size: 0.9em;
   margin-top: 40px;
 }
+
+body::after {
+  content: "";
+  display: block;
+  height: 400px; /* Add invisible space below everything */
+}
