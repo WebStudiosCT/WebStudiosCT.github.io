@@ -3,24 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Started | WebStudioCT</title>
+  <title>Get Started - WebStudioCT</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-   <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-THZX3BFYHW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-THZX3BFYHW');
   </script>
-
 </head>
 
- 
-  
 <body>
 
 <nav>
@@ -34,27 +30,20 @@
 
 <header class="hero">
   <h1>Let's Build Your Website</h1>
-  <p>Great websites. Great prices. Built for great people.</p>
+  <p>Fill out the form below and we'll get started!</p>
 </header>
 
-<section>
-  <h2>Welcome to WebStudioCT!</h2>
-  <p>Thanks for trusting us to help bring your business online.  
-  We create legit, professional websites — fast, affordable, and built right the first time. Whether you’re just starting out or ready to expand, we’re here to make it simple and easy for you.</p>
-</section>
-
-<section>
-  <h2>How It Works</h2>
-  <ol style="text-align: left; max-width: 600px; margin: 0 auto; padding-left: 20px;">
-    <li><strong>Step 1:</strong> Contact us and tell us a little about your business.</li>
-    <li><strong>Step 2:</strong> We’ll gather a few details (like business name, services, contact info).</li>
-    <li><strong>Step 3:</strong> We’ll build your website and deliver it — fast, clean, and professional.</li>
-  </ol>
-</section>
-
-<section>
-  <h2>Ready to Get Started?</h2>
-  <a href="mailto:your@email.com" class="btn">Email Us Now</a>
+<section id="get-started" style="padding: 20px;">
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSczizUsqwcVl1MAolY67g-CNXJdHw3_L9nhXwyI4rkkDEAYZw/viewform?embedded=true" 
+    width="100%" 
+    height="2062" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0" 
+    style="border: none;">
+  Loading…
+  </iframe>
 </section>
 
 <footer>
@@ -62,12 +51,19 @@
 </footer>
 
 <!-- GDPR Cookie Banner -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #1E1E1E; color: white; padding: 15px 10px; text-align: center; z-index: 9999; font-size: 14px;">
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #1E1E1E; color: white; padding: 15px 10px; text-align: center; z-index: 9999; font-size: 14px; opacity: 0; transform: translateY(100%); transition: all 0.5s ease;">
   This site uses cookies to improve your experience. By using this site, you accept our use of cookies. 
   <a href="privacy-policy.html" style="color: #4CAF50; text-decoration: underline;">Learn more</a>.
   <button onclick="document.getElementById('cookie-banner').style.display='none'" style="margin-left: 15px; padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Accept</button>
 </div>
 
+<script>
+  window.addEventListener('load', function() {
+    var banner = document.getElementById('cookie-banner');
+    banner.style.opacity = '1';
+    banner.style.transform = 'translateY(0)';
+  });
+</script>
 
 </body>
 </html>
