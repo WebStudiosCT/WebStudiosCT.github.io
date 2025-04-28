@@ -1,54 +1,42 @@
-/* General Styles */
-html {
-  scroll-behavior: smooth; /* Smooth scrolling for all link jumps */
-}
-
+/* Import Poppins font */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  text-align: center;
+  background: #f9f9f9;
+  color: #333;
 }
 
+/* Navigation Bar */
 nav {
-  background-color: #1E1E1E;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  background: #1E1E1E;
+  padding: 15px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.logo {
-  color: white;
-  font-size: 1.5em;
+nav .logo {
   font-weight: bold;
-  text-decoration: none; /* No underline */
-}
-
-.logo:hover {
-  color: #4CAF50; /* Nice hover effect on logo */
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
+  gap: 20px;
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease; /* Smooth hover transition */
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -57,61 +45,99 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background-color: #4CAF50;
+  background: linear-gradient(to right, #4CAF50, #45a049);
   color: white;
   padding: 100px 20px;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
+/* Button Style */
 .btn {
-  background-color: white;
+  display: inline-block;
+  background: white;
   color: #4CAF50;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
   font-weight: bold;
-  transition: all 0.3s ease; /* Smooth button hover */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-  background-color: #43A047;
+  background: #4CAF50;
   color: white;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.2);
 }
 
-/* Section Styles */
+/* Section General */
 section {
-  background: white;
-  margin: 20px auto;
-  padding: 40px 20px;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 60px 20px;
+  text-align: center;
 }
 
 section h2 {
-  margin-bottom: 10px;
-  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Footer */
 footer {
-  background-color: #1E1E1E;
+  background: #1E1E1E;
   color: white;
-  padding: 20px 0;
-  font-size: 0.9em;
-  margin-top: 40px;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
 }
 
-body::after {
-  content: "";
-  display: block;
-  height: 400px; /* Add invisible space below everything */
+footer a {
+  color: #4CAF50;
+  text-decoration: underline;
+}
+
+/* Cookie Banner */
+#cookie-banner {
+  font-size: 14px;
+}
+
+/* Form Section */
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
 }
