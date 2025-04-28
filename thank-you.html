@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You - WebStudioCT</title>
+  <title>Thank You | WebStudioCT</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-THZX3BFYHW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-THZX3BFYHW');
+  </script>
 </head>
 
 <body>
@@ -19,30 +28,24 @@
   </ul>
 </nav>
 
-<header class="hero">
+<section class="content">
   <h1>Thank You!</h1>
-  <p>We have received your information and will get back to you shortly.</p>
-  <a href="index.html" class="btn">Return to Home</a>
-</header>
+  <p>Your form has been successfully submitted. We will review your information and reach out to you shortly!</p>
+  <p>We appreciate your interest in working with WebStudioCT.</p>
+
+  <a href="index.html" class="btn">Back to Home</a>
+</section>
 
 <footer>
   <p>© 2025 WebStudioCT. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
 </footer>
 
 <!-- GDPR Cookie Banner -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #1E1E1E; color: white; padding: 15px 10px; text-align: center; z-index: 9999; font-size: 14px; opacity: 0; transform: translateY(100%); transition: all 0.5s ease;">
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #1E1E1E; color: white; padding: 15px 10px; text-align: center; z-index: 9999; font-size: 14px; transition: all 0.3s ease;">
   This site uses cookies to improve your experience. By using this site, you accept our use of cookies. 
   <a href="privacy-policy.html" style="color: #4CAF50; text-decoration: underline;">Learn more</a>.
   <button onclick="document.getElementById('cookie-banner').style.display='none'" style="margin-left: 15px; padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Accept</button>
 </div>
-
-<script>
-  window.addEventListener('load', function() {
-    var banner = document.getElementById('cookie-banner');
-    banner.style.opacity = '1';
-    banner.style.transform = 'translateY(0)';
-  });
-</script>
 
 </body>
 </html>
