@@ -89,15 +89,21 @@ nav ul li a:hover {
 
 /* Content Section */
 .content {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
 }
 
 /* Pricing Table */
 .pricing-table {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -133,4 +139,9 @@ footer {
 footer a {
   color: #4CAF50;
   text-decoration: underline;
+}
+
+/* GDPR Banner Button Smooth */
+#cookie-banner button:hover {
+  background-color: #2E7D32;
 }
